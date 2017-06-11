@@ -75,7 +75,7 @@
 <script type="text/javascript" src="https://content.jwplatform.com/libraries/B0jgHhOE.js"></script>
 <div id="player" class="player"></div>
 
-<script type="text/javascript" src="dist/js/jwplayer.js"></script>
+<script type="text/javascript" src="../dist/js/jwplayer.js"></script>
 <script type="text/javascript">
 	jwplayer.key = "b6LTsfpw81uKD2irZiT7R0ktouaBQE0bbufeQA==";
 </script>
