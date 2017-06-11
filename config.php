@@ -1,3 +1,3 @@
 <?php
-	$baseurl = "//gplayer.herokuapp.com";
+	$baseurl = "//gplayer-generator.herokuapp.com";
 ?>
