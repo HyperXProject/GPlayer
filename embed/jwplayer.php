@@ -75,31 +75,20 @@
 <script type="text/javascript" src="https://content.jwplatform.com/libraries/B0jgHhOE.js"></script>
 <div id="player" class="player"></div>
 
+<script type="text/javascript" src="dist/js/jwplayer.js"></script>
 <script type="text/javascript">
-    jwplayer.key = "b6LTsfpw81uKD2irZiT7R0ktouaBQE0bbufeQA==";
-    var playerInstance = jwplayer("player");
-    playerInstance.setup({
-        id: 'player',
-        controls: true,
-        displaytitle: true,
-        flashplayer: "<?php echo $baseurl; ?>/jwplayer.flash.swf",
-        width: "100%",
-        height: "100%",
-        aspectratio: "16:9",
-        fullscreen: "true",
-        primary: 'html5',
-        abouttext: "Google",
-        aboutlink: "http://google.com/",
-        provider: 'http',
-        autostart: false,
-        image: "<?php echo $baseurl; ?>/embed/?bypass=<?php echo $thumbnail; ?>",
-        sources: <?php echo json_encode($sourceMatang, JSON_UNESCAPED_SLASHES); ?>,
-        <?php
-        if ($sub) {
-            ?>
-            tracks:[{file:'<?php echo $baseurl; ?>/embed/?bypass=<?php echo @$sub; ?>', label:'Indonesia', kind:'captions', "default":true}],captions:{color:'#fffbfb',fontSize:15,backgroundOpacity:30}
-            <?php
-        }
-        ?>
-    });
+	jwplayer.key = "b6LTsfpw81uKD2irZiT7R0ktouaBQE0bbufeQA==";
+</script>
+
+<script type="text/javascript">
+	var player = jwplayer("player");
+	player.setup({
+		sources : [{
+			file : "<?php echo $dataDrive; ?>",
+			label : "HD",
+			type : "video/mp4"
+		}],
+		abouttext: "Google",
+		aboutlink: "http://google.com/"
+	})
 </script>
