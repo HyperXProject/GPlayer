@@ -75,7 +75,7 @@
 <div id="player" class="player"></div>
 
 <script type="text/javascript">
-    jwplayer.key = "IzEqVjRNGbvR6o5C9Fa0V+d5RKsU6WMks6OoUQ==";
+    jwplayer.key = "b6LTsfpw81uKD2irZiT7R0ktouaBQE0bbufeQA==";
     var playerInstance = jwplayer("player");
     playerInstance.setup({
         id: 'player',
