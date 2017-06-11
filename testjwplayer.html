@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test jwplayer</title>
+</head>
+<body>
+
+<div id="player" class="player"></div>
+
+<script type="text/javascript" src="dist/js/jwplayer-v2.js"></script>
+<script type="text/javascript">
+	jwplayer.key = "xzzkZEhoD18hu+uVUjojjuxqHfAHwFLSEbHy8A==";
+</script>
+
+<script type="text/javascript">
+	var player = jwplayer("player");
+	player.setup({
+		sources : [{
+			file : "https://redirector.googlevideo.com/videoplayback?id=207b9a028302d64b&itag=18&source=webdrive&requiressl=yes&ttl=transient&mm=30&mn=sn-ab5l6nlz&ms=nxu&mv=u&pl=48&mime=video/mp4&lmt=1472300389173041&mt=1486913036&ip=2604:a880:800:10::2390:5001&ipbits=128&expire=1486927632&sparams=ip%2Cipbits%2Cexpire%2Cid%2Citag%2Csource%2Crequiressl%2Cttl%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cmime%2Clmt&signature=60352B05EE73C6986F0085A51499C92B8CDB1337.BBF80F5F9F9A242A6CFA8C7A1EDA7FDCAE0A83AD&key=ck2&app=explorer&driveid=0B5p2vl6cAl29Q0g5eE9zeExncUk&title=a.mp4",
+			label : "HD",
+			type : "video/mp4"
+		}],
+		abouttext: "Google",
+		aboutlink: "http://google.com/"
+	})
+</script>
+</body>
+</html>
